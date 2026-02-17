@@ -29,6 +29,7 @@ All visualizations were created using **Matplotlib**.
 The project files are organized as follows:
 
 gold-price-analysis Aug 2000 - Fev 2026/
+
 ├── Dataset/
 │ └── gold_prices_aug_2000_2026_feb.csv # Original dataset from Kaggle
 
