@@ -3,6 +3,8 @@
 -- intelligence (BI), and analytics. It includes positions such as Data 
 -- Analysts, Analytics Engineers, and BI Developers. 
 
+
+-- SELECTING ALL JOBS RELATED TO Business Intelligence (Data Analyst / BI / Analytics)
 SELECT *
 FROM some_data_science_jobs_data
 WHERE job_title IN (
@@ -32,5 +34,8 @@ WHERE job_title IN (
     'Staff Data Analyst'
 );
 
+
+
+--
 
 --------------------------------------------------------------------------------------------
