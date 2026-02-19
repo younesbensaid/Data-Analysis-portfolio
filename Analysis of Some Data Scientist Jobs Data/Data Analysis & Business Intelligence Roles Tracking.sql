@@ -5,6 +5,8 @@
 
 
 -- SELECTING ALL JOBS RELATED TO Business Intelligence (Data Analyst / BI / Analytics)
+-- AND EXPORT IT TO CSV IN 
+-- Dataset/lock.ALL JOBS RELATED TO Business Intelligence (Data Analyst, BI, Analytics).csv
 SELECT *
 FROM some_data_science_jobs_data
 WHERE job_title IN (
