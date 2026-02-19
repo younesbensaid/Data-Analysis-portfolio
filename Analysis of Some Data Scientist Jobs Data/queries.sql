@@ -17,3 +17,5 @@ CREATE TABLE Some_data_science_jobs_data (
 
 --------------------------------------------------------------
 
+-- Then import csv data into Some_data_science_jobs_data using PSQL TOOL in Postgres
+
