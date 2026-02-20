@@ -18,5 +18,9 @@ Purpose:
 To evaluate how experience levels (EN, MI, SE, EX)
 are distributed across the data we are working in
 
+SELECTING ALL experience levels JOBS RELATED TO data analytics roles
+AND EXPORT IT TO CSV IN 
+Dataset/exprience-levels-related-to-data-analytics-roles.csv
 
 */
+
