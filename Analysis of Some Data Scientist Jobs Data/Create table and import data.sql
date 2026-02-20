@@ -1,6 +1,12 @@
 
 ---- Create Some_data_science_jobs_data table
 -------------------------------------------------------------
+/*
+NOTE:
+This distribution reflects only the data available in the current dataset I
+am working with. It does not necessarily represent an accurate or
+comprehensive representation of the actual labor market.
+*/
 CREATE TABLE Some_data_science_jobs_data (
     work_year INT,
     experience_level TEXT,
