@@ -21,10 +21,25 @@ dataset by categorizing them into salary brackets
 
 */
 
-WITH analytics_roles AS (
+SELECT
+    salary_range,
+    COUNT(*) AS total_positions
+FROM (
     SELECT
-        job_title,
-        experience_level
+        CASE
+            WHEN salary_in_usd < 50000 THEN 1
+            WHEN salary_in_usd < 100000 THEN 2
+            WHEN salary_in_usd < 150000 THEN 3
+            WHEN salary_in_usd < 200000 THEN 4
+            ELSE 5
+        END AS range_order,
+        CASE
+            WHEN salary_in_usd < 50000 THEN '< 50,000'
+            WHEN salary_in_usd < 100000 THEN '50,000 - <100,000'
+            WHEN salary_in_usd < 150000 THEN '100,000 - <150,000'
+            WHEN salary_in_usd < 200000 THEN '150,000 - <200,000'
+            ELSE '>= 200,000'
+        END AS salary_range
     FROM some_data_science_jobs_data
     WHERE job_title IN (
         'Analytics Engineer',
@@ -52,12 +67,6 @@ WITH analytics_roles AS (
         'Product Data Analyst',
         'Staff Data Analyst'
     )
-)
-
-SELECT
-    job_title,
-    experience_level,
-    COUNT(*) AS total_positions
-FROM analytics_roles
-GROUP BY job_title, experience_level
-ORDER BY job_title, experience_level;
+) 
+GROUP BY salary_range, range_order
+ORDER BY range_order;
