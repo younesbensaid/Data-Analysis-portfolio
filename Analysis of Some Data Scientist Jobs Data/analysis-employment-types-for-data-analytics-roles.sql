@@ -33,7 +33,7 @@ Dataset/employment-types-related-to-data-analytics-roles-by-group.csv
 AND THEN calculating the total positions and
 the salary details for each employlent type
 AND EXPORT IT TO CSV FILE IN
-Dataset/total_positions-for-each-employment-type.csv
+Dataset/total-positions-and-salary-details-for-each-employment-type.csv
 */
 
 WITH analytics_roles AS (
