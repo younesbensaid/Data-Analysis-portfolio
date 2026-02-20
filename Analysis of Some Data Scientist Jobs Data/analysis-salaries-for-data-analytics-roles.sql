@@ -11,11 +11,13 @@ salaries in analytics roles in general.
 
 
 Description:
-This queries analyzes the salaries in data analytics roles
+This query analyzes salaries within data analytics roles from the data 
+by grouping them into defined salary ranges (brackets) to summarize
+their distribution across the dataset.
 
 Purpose:
-To have an overview about the salaries
-across the data we are working in
+To provide a clear overview of how salaries are distributed within the
+dataset by categorizing them into salary brackets 
 
 */
 
