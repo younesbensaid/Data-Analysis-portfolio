@@ -1,32 +1,39 @@
 /*
-File: analysis-employee-types-for-data-analytics-roles.sql
+File: analysis-employment-types-for-data-analytics-roles.sql
 
 
 NOTE:
-The employee types distribution presented in this analysis reflects
+The employment types distribution presented in this analysis reflects
 only the data available in the current dataset I am working with. This
 distribution is not necessarily an accurate or comprehensive
 representation of the actual labor market or the true distribution of
-employee types in analytics roles in general. 
+employment types in analytics roles in general. 
 
 
 Description:
-This two queries analyzes the distribution of employee types
-in data analytics roles
+This query groups data analytics roles by job_title and
+employment_type to calculate the number of positions and summarize  
+salary details for each group. It also aggregates data by 
+employment type to show total positions and salary statistics per level.
 
 Purpose:
-To evaluate how employee types (CT,FL ,FT ,PT )
-are distributed across the data we are working in
+To provide a breakdown of how roles are distributed across 
+employment types in the dataset, along with salary summaries for each job title–
+employment type combination and for each employment type overall.
 
-SELECTING ALL employee JOBS types  RELATED To data analytics roles
-and grouping by (job_title + employment_type)
+
+STEPS:
+
+grouping by (job_title + employment_type)
 and counting the total position for each group
+and calculating the salaries details for each group
 AND EXPORT IT TO CSV IN 
-Dataset/employee-types-related-to-data-analytics-roles-by-group.csv
+Dataset/employment-types-related-to-data-analytics-roles-by-group.csv
 
-AND THEN calculating the total positions for each employee type
+AND THEN calculating the total positions and
+the salary details for each employlent type
 AND EXPORT IT TO CSV FILE IN
-Dataset/total_positions-for-each-employee-type.csv
+Dataset/total_positions-for-each-employment-type.csv
 */
 
 WITH analytics_roles AS (
