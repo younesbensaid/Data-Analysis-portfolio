@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------------------
--- tracking and analyzing job roles related to data analysis, business 
+-- tracking job roles related to data analysis, business 
 -- intelligence (BI), and analytics. It includes positions such as Data 
 -- Analysts, Analytics Engineers, and BI Developers. 
 
@@ -34,8 +34,8 @@ WHERE job_title IN (
     'Principal Data Analyst',
     'Product Data Analyst',
     'Staff Data Analyst'
-);
-
+)
+ORDER BY work_year;
 
 
 --
