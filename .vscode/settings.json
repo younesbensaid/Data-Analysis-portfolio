@@ -7,8 +7,8 @@
             "port": 5432,
             "driver": "PostgreSQL",
             "name": "BENSAID Younes",
-            "database": "Analysis of Some Data Scientist Jobs Data",
-            "username": "postgres"
+            "username": "postgres",
+            "database": "Analysis of Some Data Scientist Jobs Data"
         }
     ]
 }
