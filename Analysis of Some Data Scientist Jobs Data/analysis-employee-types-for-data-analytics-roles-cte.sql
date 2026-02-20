@@ -28,3 +28,44 @@ AND THEN calculating the total positions for each employee type
 AND EXPORT IT TO CSV FILE IN
 Dataset/total_positions-for-each-employee-type.csv
 */
+
+WITH analytics_roles AS (
+    SELECT
+        job_title,
+        employment_type
+    FROM some_data_science_jobs_data
+    WHERE job_title IN (
+        'Analytics Engineer',
+        'BI Analyst',
+        'BI Data Analyst',
+        'BI Developer',
+        'Business Data Analyst',
+        'Business Intelligence Engineer',
+        'Compliance Data Analyst',
+        'Data Analyst',
+        'Data Analytics Consultant',
+        'Data Analytics Engineer',
+        'Data Analytics Lead',
+        'Data Analytics Manager',
+        'Data Analytics Specialist',
+        'Data Operations Analyst',
+        'Data Quality Analyst',
+        'Finance Data Analyst',
+        'Financial Data Analyst',
+        'Insight Analyst',
+        'Lead Data Analyst',
+        'Marketing Data Analyst',
+        'Power BI Developer',
+        'Principal Data Analyst',
+        'Product Data Analyst',
+        'Staff Data Analyst'
+    )
+)
+
+SELECT
+    job_title,
+    employment_type,
+    COUNT(*) AS total_positions
+FROM analytics_roles
+GROUP BY job_title, employment_type
+ORDER BY job_title, employment_type;
