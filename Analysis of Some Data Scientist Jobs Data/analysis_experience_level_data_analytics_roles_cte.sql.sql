@@ -19,7 +19,7 @@ To evaluate how experience levels (EN, MI, SE, EX)
 are distributed across the data we are working in
 
 SELECTING ALL experience levels JOBS RELATED TO data analytics roles
-and grouping by (job-title + exprience level)
+and grouping by (job_title + experience_level)
 and counting the total position for each group
 AND EXPORT IT TO CSV IN 
 Dataset/exprience-levels-related-to-data-analytics-roles-by-group.csv
