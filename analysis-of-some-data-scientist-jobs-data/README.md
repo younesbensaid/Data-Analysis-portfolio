@@ -53,21 +53,35 @@ The project files are organized as follows:
 analysis-of-some-data-scientists-jobs-data/
 
 ├── Dataset/
+
   └── original-dataset.csv # Original dataset from Kaggle
+
   └── all-jobs-related-to-data-analytics-toles.csv
+
   └── employment-types-related-to-data-analytics-roles-by-group.csv
+
   └── exprience-levels-related-to-data-analytics-roles-by-group.csv
+
   └── salary-range.csv
+
   └── total-positions-and-salary-details-for-each-employment-type.csv
+
   └── total-positions-for-each-experience-level.csv
 
 ├── sql-queries/
+
   └── analysis-companies-sizes-for-data-analytics-roles.sql
+
   └── analysis-employment-types-for-data-analytics-roles.sql
+
   └── analysis-experience-level-data-analytics-roles.sql
+
   └── analysis-salaries-for-data-analytics-roles.sql
+
   └── create-table-and-import-data.sql
+
   └── Data-analytics-roles-tracking.sql
+  
   └── original-data-audit.sql
 
 ├── LICENSE # Project license
