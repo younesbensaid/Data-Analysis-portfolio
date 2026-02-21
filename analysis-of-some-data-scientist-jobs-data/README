@@ -5,7 +5,17 @@
 
 > **Note:** The results presented in this analysis are based solely on the dataset used in this project and do not necessarily reflect real-world trends.
 
-This project focuses on analyzing **Data Scientist jobs** using a data from Kaggle.
+This project focuses on analyzing **Data Scientist jobs** using data from Kaggle.
+
+## Project Workflow
+
+# Analysis of Some Data Scientist Jobs Data
+
+## Project Overview
+
+> **Note:** The results presented in this analysis are based solely on the dataset used in this project and do not necessarily reflect real-world trends.
+
+This project focuses on analyzing **Data Scientist jobs** using data from Kaggle.
 
 ## Project Workflow
 
@@ -18,7 +28,7 @@ This project focuses on analyzing **Data Scientist jobs** using a data from Kagg
 
 3. **Data Inspection**
    - Inspected all values in each column to identify irregular or unexpected entries.
-   - Checked for inconsistent formatting or spelling of values.
+   - Checked for inconsistent formatting and spelling of values.
 
 4. **Data Selection**
    - Extracted all records related to **Data Analytics roles**.
@@ -28,13 +38,13 @@ This project focuses on analyzing **Data Scientist jobs** using a data from Kagg
    - Grouped data analytics roles by `job_title` and `experience_level`.
    - Calculated the number of positions and summarized salary details for each group.
    - Aggregated results by experience level to show total positions and salary statistics.
-   - Exported the results to a CSV file.
+   - Exported the results to CSV files.
 
 6. **Analysis by Job Title and Employment Type**
    - Grouped data analytics roles by `job_title` and `employment_type`.
    - Calculated the number of positions and summarized salary details for each group.
-   -  Then aggregating employment type to show the total number of positions and salary details for each type.
-   - Exported the results to a CSV file.
+   - Aggregated results by employment type to show total positions and salary details for each type.
+   - Exported the results to  CSV files.
 
 7. **Salary Range Analysis**
    - Analyzed salaries within data analytics roles by defining salary brackets.
@@ -44,8 +54,8 @@ This project focuses on analyzing **Data Scientist jobs** using a data from Kagg
 8. **Analysis by Job Title and Company Size**
    - Grouped data analytics roles by `job_title` and `company_size`.
    - Calculated the number of positions and summarized salary details for each combination.
-   - Additionally, aggregated by company size alone to show the total number of positions and salary details for each type.
-   - Exported the results to a CSV file.
+   - Additionally, aggregated by company size alone to show total positions and salary details.
+   - Exported the results to  CSV files.
 
    ## Project Structure
 
@@ -60,14 +70,14 @@ analysis-of-some-data-scientists-jobs-data/
   └── exprience-levels-related-to-data-analytics-roles-by-group.csv
   └── salary-range.csv
   └── total-positions-and-salary-details-for-each-employment-type.csv
-  └── total_positions-for-each-experience-level.csv
+  └── total-positions-for-each-experience-level.csv
 
 ├── sql-queries/
   └── analysis-companies-sizes-for-data-analytics-roles.sql
   └── analysis-employment-types-for-data-analytics-roles.sql
   └── analysis-experience-level-data-analytics-roles.sql
   └── analysis-salaries-for-data-analytics-roles.sql
-  └── Create table and import data.sql
+  └── create-table-and-import-data.sql
   └── Data-analytics-roles-tracking.sql
   └── original-data-audit.sql
 
