@@ -37,3 +37,49 @@ the salary details for each company size
 AND EXPORT IT TO CSV FILE IN
 Dataset/total-positions-and-salary-details-for-each-company-size.csv
 */
+
+WITH analytics_roles AS (
+    SELECT
+        job_title,
+        company_size,
+        salary_in_usd
+    FROM some_data_science_jobs_data
+    WHERE job_title IN (
+        'Analytics Engineer',
+        'BI Analyst',
+        'BI Data Analyst',
+        'BI Developer',
+        'Business Data Analyst',
+        'Business Intelligence Engineer',
+        'Compliance Data Analyst',
+        'Data Analyst',
+        'Data Analytics Consultant',
+        'Data Analytics Engineer',
+        'Data Analytics Lead',
+        'Data Analytics Manager',
+        'Data Analytics Specialist',
+        'Data Operations Analyst',
+        'Data Quality Analyst',
+        'Finance Data Analyst',
+        'Financial Data Analyst',
+        'Insight Analyst',
+        'Lead Data Analyst',
+        'Marketing Data Analyst',
+        'Power BI Developer',
+        'Principal Data Analyst',
+        'Product Data Analyst',
+        'Staff Data Analyst'
+    )
+)
+
+SELECT
+    job_title,
+    company_size,
+    COUNT(*) AS total_positions,
+    ROUND(AVG(salary_in_usd)::numeric, 2) AS average_salary,
+    ROUND(PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY salary_in_usd)::numeric, 2) AS median_salary,
+    ROUND(MAX(salary_in_usd)::numeric, 2) AS maximum_salary,
+    ROUND(MIN(salary_in_usd)::numeric, 2) AS minimum_salary
+FROM analytics_roles
+GROUP BY job_title, company_size
+ORDER BY job_title, company_size;
