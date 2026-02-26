@@ -5,10 +5,8 @@
 ## Data Source & Attribution
 - **Dataset:** Historical Gold Prices (1995–2026)  
 - **Source:** [Kaggle Dataset](https://www.kaggle.com/datasets/mr1rameez/historical-gold-prices-19952026)  
-- **License:** Creative Commons Attribution 4.0 International (CC BY 4.0)  
+- **License:** [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) 
 - **Author/Publisher:** Muhammad Rameez
-- **License:** Creative Commons Attribution 4.0 International (CC BY 4.0)
-               https://creativecommons.org/licenses/by/4.0/  
 
 > Notice: Any modifications, data cleaning, or transformations performed on the original dataset are documented in the notebook.
 
