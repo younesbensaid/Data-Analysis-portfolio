@@ -19,6 +19,20 @@ They do not represent actual Apple Inc. financial data.**
 
 **Dashboard Development and Presentation:** I developed a 3-page interactive dashboard focusing on executive summaries, product performance, and returns overview.
 
+## Dashboard:
+
+### Executive performance summary:
+
+![alt text](images/executive_performance_summary.png)
+
+### Product performance:
+
+![alt text](images/product_performance.png)
+
+### Returns Overview:
+
+![alt text](images/returns_overview.png)
+
 ## Project Structure:
 
 The project files are organized as follows:
