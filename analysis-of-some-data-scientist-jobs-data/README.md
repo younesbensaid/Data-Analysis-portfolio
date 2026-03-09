@@ -1,5 +1,17 @@
 # Analysis of Some Data Scientist Jobs Data
 
+## 📊 Data Source & Licensing
+
+The dataset used in this project is sourced from **Kaggle**:
+
+* **Dataset Name:** [Salary of Data Scientists]
+* **Original Source:** [https://www.kaggle.com/datasets/piyushborhade/salary-of-data-scientists]
+* **License:** MIT License
+* **Copyright:** [2023] [Piyush Borhade]
+
+> **Note:** This project complies with the MIT License by including the copyright notice 
+> and permission notice in all copies or substantial portions of the dataset.
+
 ## Project Overview
 
 > **Note:** The results presented in this analysis are based solely on the dataset used in this project and do not necessarily reflect real-world trends.
